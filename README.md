@@ -8,9 +8,9 @@ You essentially have 2 ways of installing the script, automatically or manually.
 ## Automatic (simple) way
 You can install the script automatically by running a single command.
 ```sh
-sudo sh <(curl -s https://raw.githubusercontent.com/Lopastudio/noaa-uploader/refs/heads/main/installer.sh)
+sudo bash -c "$(curl -s https://raw.githubusercontent.com/Lopastudio/noaa-uploader/refs/heads/main/installer.sh)"
 ```
-This command will download the installer from github and launch it so you can configure everything without even touching any linux garbagio.
+This command will launch the installer directly from github so you can configure everything without even touching any linux garbagio.
 
 ## MANUAL (gigachad) WAY
 
