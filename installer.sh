@@ -57,14 +57,14 @@ test_ftp_credentials() {
 
 echo -e "${CYAN}Do you want to install or uninstall the FTP uploader? (install/uninstall)${RESET}"
 read ACTION
-if [ "$ACTION" == "uninstall" ]; then
+if [ "$ACTION" = "uninstall" ]; then
     uninstall
 fi
 
 # Prompt for dependency installation
 echo -e "${YELLOW}First, we need to install dependencies [FTP, CURL] (y/n)${RESET}"
 read depend
-if [ "$depend" == "n" ]; then
+if [ "$depend" = "n" ]; then
     echo -e "${RED}Dependencies are required for the script to work correctly. Exiting installer.${RESET}"
     exit 0
 fi
@@ -128,7 +128,7 @@ echo -e "${GREEN}Script created and made executable.${RESET}"
 # Set up cron job if needed
 echo -e "${CYAN}Do you want to set up automatic execution via cron? (y/n)${RESET}"
 read SETUP_CRON
-if [ "$SETUP_CRON" == "y" ]; then
+if [ "$SETUP_CRON" = "y" ]; then
     echo -e "${CYAN}Enter schedule for cron job (default: daily at midnight '0 0 * * *'):${RESET}"
     read CRON_SCHEDULE
     CRON_SCHEDULE=${CRON_SCHEDULE:-"0 0 * * *"}
@@ -138,7 +138,7 @@ fi
 
 echo -e "${CYAN}Do you want to run the script NOW? (y/n)${RESET}"
 read testrun
-if [ "$testrun" == "y" ]; then
+if [ "$testrun" = "y" ]; then
     sh "$SCRIPT_PATH"
 fi
 
