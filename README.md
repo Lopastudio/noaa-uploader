@@ -12,7 +12,8 @@ sudo bash -c "$(curl -s https://raw.githubusercontent.com/Lopastudio/noaa-upload
 ```
 This command will launch the installer directly from github so you can configure everything without even touching any linux garbagio.
 
-## MANUAL (gigachad) WAY
+## MANUAL (gigachad) WAY <br> <img src="https://i.pinimg.com/originals/25/bd/8b/25bd8b7f6e57cdfd17747b25d753b2ce.jpg" width="50" height="50"> 
+
 
 First things first, change the directory to your home (or where you want the script to exist):
 ```sh
